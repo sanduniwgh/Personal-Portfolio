@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Protfolio </title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
     <script defer type="module" src="js/index.js"></script>
 
 </head>
@@ -13,15 +15,18 @@
         <div class="container"></div>
         <nav>
         <img src="" class="logo">
+        <ion-icon name="grid-outline" class="menu" id="menu"></ion-icon>
+        <!-- <ion-icon name="close-outline" class="cross" id="cross"></ion-icon> -->
         <ul>
             <li><a href="#" >Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
 
 
         </ul>
+       
         </nav>
         <div class="header-text">
             <h1>Hi, I'm <span>Sanduni</span><br>from Sri Lanka</h1>
@@ -32,7 +37,7 @@
 
     <!-- about -->
 
-    <div class="about">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -40,7 +45,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p><p>Hello there! I'm Sanduni, a dedicated software engineer hailing from Sri Lanka. With a solid foundation in software development, I constantly seek innovative approaches to problem-solving, ensuring that every line of code contributes to a superior user experience.
+                    <p><p>Hello there! I'm Sanduni, a dedicated traineee software engineer hailing from Sri Lanka. With a solid foundation in software development, I constantly seek innovative approaches to problem-solving, ensuring that every line of code contributes to a superior user experience.
                         
                          From conceptualization to implementation, I take pride in delivering solutions that not only meet but exceed expectations.
                         
@@ -82,6 +87,64 @@
             </div>
         </div>
     </div>
+
+    <!-- -----------projects------------ -->
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="project-list">
+            <div class="project-num">
+                <h2>Simple-Text-Editor</h2>
+                <img src="images/texteditor.jpg">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis assumenda dolor quaerat voluptatem incidunt et deleniti? Nemo totam voluptas necessitatibus omnis quisquam vel sequi veritatis repudiandae, similique vero esse nulla.</p>
+
+            </div>
+
+            <div class="project-num">
+                <h2>POS System</h2>
+                <img src="images/Screenshot from 2023-12-10 23-34-52.png">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis assumenda dolor quaerat voluptatem incidunt et deleniti? Nemo totam voluptas necessitatibus omnis quisquam vel sequi veritatis repudiandae, similique vero esse nulla.</p>
+            </div>
+
+            <div class="project-num">
+                <h2>Google Clone</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis assumenda dolor quaerat voluptatem incidunt et deleniti? Nemo totam voluptas necessitatibus omnis quisquam vel sequi veritatis repudiandae, similique vero esse nulla.</p>
+
+            </div>
+
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container1"> 
+            <h2 class="sub-title">Contact Me</h2>'
+            <div>
+
+                <p>sanduniwgh@gmail.com</p>
+                <p>071-5111111</p>
+                <a href="#" download class="cv">Dowload cv</a>
+
+            </div>
+            
+        </div>
+
+        <div class="container2">
+            <form>
+                <input type="text" name="Name" placeholder="Enter your name" required><br>
+                <input type="email" name="email" placeholder="Enter your email" required><br>
+                <textarea name="message" rows="8" placeholder="Enter your message here"></textarea><br>
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
     
 </body>
 </html>

@@ -1,5 +1,10 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
+const menuElm = document.querySelector('#menu');
+const navUlElm = document.querySelector('nav ul');
+const iconcrossElm =document.querySelector('#cross');
+
+
 
 function opentab(tabname) {
   for (let tablink of tablinks) {
@@ -22,3 +27,13 @@ for (let tablink of tablinks) {
     opentab(tabname);
   });
 }
+
+menuElm.addEventListener('click', e => {
+  navUlElm.classList.toggle("show-list");
+  navUlElm.classList.toggle("show-cross");
+  iconcrossElm.display
+
+  
+});
+
+
