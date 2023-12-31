@@ -21,6 +21,21 @@ body{
     
    
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: -1;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#header .header-text {
+    animation: fadeIn 15s ease forwards;
+}
 .container{
     padding: 10px 10%;
 }
@@ -321,7 +336,15 @@ btn.cv{
 }
 
 
-   
+
+
+
+
+
+
+
+
+
 
 
 
